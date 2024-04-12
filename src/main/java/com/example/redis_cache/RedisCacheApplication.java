@@ -33,7 +33,6 @@ public class RedisCacheApplication implements CommandLineRunner {
         redisTemplate.opsForHash().put("key3" ,"thaolv", GSON.toJson(person));
         System.out.println(redisTemplate.opsForHash().get("key3", "thaolv"));
         //123
-        //haa
 
     }
 
