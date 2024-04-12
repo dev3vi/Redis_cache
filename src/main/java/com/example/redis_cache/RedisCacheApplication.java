@@ -32,6 +32,7 @@ public class RedisCacheApplication implements CommandLineRunner {
         Person person = new Person(1, "Nguyen van a2", 18);
         redisTemplate.opsForHash().put("key3" ,"thaolv", GSON.toJson(person));
         System.out.println(redisTemplate.opsForHash().get("key3", "thaolv"));
+        //123
 
     }
 
@@ -39,6 +40,7 @@ public class RedisCacheApplication implements CommandLineRunner {
         Person person = new Person(1, "Nguyen van a222", 18);
         redisTemplate.opsForValue().set(Constants.KEY , GSON.toJson(person));
         System.out.println(redisTemplate.opsForValue().get(Constants.KEY));
+        //234
     }
 
     private void addWithList() {

@@ -3,6 +3,7 @@ package com.example.redis_cache.model;
 import java.io.Serializable;
 
 public class Person implements Serializable {
+    //123
 
     private Integer id;
     private String name;
