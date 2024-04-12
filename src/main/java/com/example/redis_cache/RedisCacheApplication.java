@@ -32,6 +32,7 @@ public class RedisCacheApplication implements CommandLineRunner {
         Person person = new Person(1, "Nguyen van a2", 18);
         redisTemplate.opsForHash().put("key3" ,"thaolv", GSON.toJson(person));
         System.out.println(redisTemplate.opsForHash().get("key3", "thaolv"));
+        System.out.println(redisTemplate.opsForHash().get("key3", "thaolv"));
 
     }
 
